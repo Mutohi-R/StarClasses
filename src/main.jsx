@@ -5,9 +5,9 @@ import {
   RouterProvider 
 } from "react-router-dom";
 
-import "./styles/index.css";
-import Home from "./pages/Home/Home";
-import Signup from "./pages/Signup/Signup";
+import "@styles/index.css";
+import Home from "@pages/Home/Home";
+import Signup from "@pages/Signup/Signup";
 
 const router = createBrowserRouter([
   {
