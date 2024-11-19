@@ -20,17 +20,34 @@
   /* Step 5: 36px → 48px */
   --step-5: clamp(2.25rem, 1.8375rem + 1.5vw, 3rem);
 
+  --fs-300: var(var(--step--1));
+  --fs-400: var(var(--step-0));
+  --fs-500: var(var(--step-1));
+  --fs-600: var(var(--step-2));
+  --fs-700: var(var(--step-3));
+  --fs-800: var(var(--step-4));
+  --fs-900: var(var(--step-5));
+
   /* Fonts */
   --ff-primary: "Lato", sans-serif;
   --ff-secondary: "Source Serif 4", serif;
 
   /* FONT WEIGHTS */
-  --fw-thin: 100;
-  --fw-light: 300;
-  --fw-regular: 400;
-  --fw-semibold: 600;
-  --fw-bold: 700;
+  --fw-100: 100;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
 
   /* Colors */
-  --clr-primary: hsl(213, 59%, 56%);
+  --clr-primary-200: hsl(221, 33%, 80%);
+  --clr-primary-300: hsl(220, 29%, 62%);
+  --clr-primary-400: hsl(213, 59%, 56%);
+  --clr-primary-900: hsl(201, 100%, 5%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-400: hsl(208, 6%, 52%);
+  --clr-neutral-500: hsl(208, 8%, 37%);
+  --clr-neutral-900: hsl(0, 0%, 10%);
+
 }
