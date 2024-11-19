@@ -1,0 +1,36 @@
+:root {
+  /* Step -1: 12px → 14px */
+  --step--1: clamp(0.75rem, 0.6813rem + 0.25vw, 0.875rem);
+
+  /* Step 0: 14px → 16px */
+  --step-0: clamp(0.875rem, 0.8063rem + 0.25vw, 1rem);
+
+  /* Step 1: 16px → 20px */
+  --step-1: clamp(1rem, 0.8625rem + 0.5vw, 1.25rem);
+
+  /* Step 2: 24px → 24px */
+  --step-2: clamp(1.5rem, 1.5rem + 0vw, 1.5rem);
+
+  /* Step 3: 24px → 32px */
+  --step-3: clamp(1.5rem, 1.225rem + 1vw, 2rem);
+
+  /* Step 4: 28px → 40px */
+  --step-4: clamp(1.75rem, 1.3375rem + 1.5vw, 2.5rem);
+
+  /* Step 5: 36px → 48px */
+  --step-5: clamp(2.25rem, 1.8375rem + 1.5vw, 3rem);
+
+  /* Fonts */
+  --ff-primary: "Lato", sans-serif;
+  --ff-secondary: "Source Serif 4", serif;
+
+  /* FONT WEIGHTS */
+  --fw-thin: 100;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Colors */
+  --clr-primary: hsl(213, 59%, 56%);
+}

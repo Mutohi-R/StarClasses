@@ -1,0 +1,120 @@
+/* FONT SIZES */
+.fs--1 {
+  font-size: var(--step--1);
+}
+.fs-0 {
+  font-size: var(--step-0);
+}
+.fs-1 {
+  font-size: var(--step-1);
+}
+.fs-2 {
+  font-size: var(--step-2);
+}
+.fs-3 {
+  font-size: var(--step-3);
+}
+.fs-4 {
+  font-size: var(--step-4);
+}
+.fs-5 {
+  font-size: var(--step-5);
+}
+
+/* FONT WEIGHTS */
+.fw-thin {
+  font-weight: var(--fw-thin);
+}
+.fw-light {
+  font-weight: var(--fw-light);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+.fw-semibold {
+  font-weight: var(--fw-semibold);
+}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+/* FONT FAMILIES */
+.ff-primary {
+  font-family: var(--ff-primary);
+}
+.ff-secondary {
+  font-family: var(--ff-secondary);
+}
+
+/* COLORS */
+.text-primary {
+  color: var(--clr-primary);
+}
+.bg-primary {
+  background-color: var(--clr-primary);
+}
+
+/* Composition */
+.content-grid {
+  --padding-inline: 1rem;
+  --content-max-width: 1000px;
+  --breakout-max-width: 1200px;
+  --partial-max-width: 1120px;
+
+  --breakout-size: calc(
+    (var(--breakout-max-width) - var(--content-max-width)) / 2
+  );
+
+  --partial-size: calc(
+    (var(--partial-max-width) - var(--content-max-width)) / 2
+  );
+
+  display: grid;
+  grid-template-columns:
+    [full-width-start] minmax(
+      var(--padding-inline),
+      1fr
+    ) [breakout-start] minmax(0, var(--breakout-size))
+    [partial-start] minmax(0, var(--partial-size)) [content-start] min(
+      100% - (var(--padding-inline) * 2),
+      var(--content-max-width)
+    )
+    [content-end]minmax(0, var(--breakout-size)) [partial-end] minmax(
+      0,
+      var(--partial-size)
+    )
+    [breakout-end]minmax(var(--padding-inline), 1fr) [full-width-end];
+}
+
+.content-grid > :not(.breakout, .full-width),
+.full-width > :not(.breakout, .full-width) {
+  grid-column: content;
+}
+
+.content-grid > .breakout {
+  grid-column: breakout;
+}
+
+.content-grid > .partial {
+  grid-column: partial;
+}
+
+.content-grid > .full-width {
+  grid-column: full-width;
+
+  display: grid;
+  grid-template-columns: inherit;
+}
+
+.even-columns {
+  display: grid;
+
+  @media only screen and (min-width: 45em) {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+.flow > * + * {
+  margin-block-start: var(--_flow-space, 0.5em);
+}
