@@ -20,13 +20,13 @@
   /* Step 5: 36px → 48px */
   --step-5: clamp(2.25rem, 1.8375rem + 1.5vw, 3rem);
 
-  --fs-300: var(var(--step--1));
-  --fs-400: var(var(--step-0));
-  --fs-500: var(var(--step-1));
-  --fs-600: var(var(--step-2));
-  --fs-700: var(var(--step-3));
-  --fs-800: var(var(--step-4));
-  --fs-900: var(var(--step-5));
+  --fs-300: var(--step--1);
+  --fs-400: var(--step-0);
+  --fs-500: var(--step-1);
+  --fs-600: var(--step-2);
+  --fs-700: var(--step-3);
+  --fs-800: var(--step-4);
+  --fs-900: var(--step-5);
 
   /* Fonts */
   --ff-primary: "Lato", sans-serif;
@@ -46,8 +46,21 @@
   --clr-primary-900: hsl(201, 100%, 5%);
 
   --clr-neutral-100: hsl(0, 0%, 100%);
-  --clr-neutral-400: hsl(208, 6%, 52%);
-  --clr-neutral-500: hsl(208, 8%, 37%);
+  --clr-neutral-300: hsl(0, 2%, 82%); /* #d2d0d0 */
+  --clr-neutral-400: hsl(208, 6%, 52%); /* #7d858c */
+  --clr-neutral-500: hsl(208, 8%, 37%); /* #575f66 */
   --clr-neutral-900: hsl(0, 0%, 10%);
 
+  --br-1: 0.25rem;
+
+  --gap-1: 0.75rem;
+  --gap-2: 1rem;
+  --gap-3: 1.25rem;
+  --gap-4: 1.5rem;
+  --gap-5: 2rem;
+  --gap-6: 2.5rem;
+  --gap-7: 3rem;
+  --gap-8: 3.5rem;
+  --gap-9: 3.75rem;
+  --gap-10: 5rem;
 }

@@ -1,0 +1,73 @@
+.hero {
+  padding-block: 3rem;
+  p {
+    max-width: 58ch;
+  }
+
+  .heroImg {
+    @media screen and (width > 800px) {
+      max-width: 600px;
+      margin-inline-start: auto;
+    }
+  }
+}
+
+.about {
+  padding-block: 9.25rem 6.25rem;
+
+  .cardContainer {
+    .cardDescription {
+      max-width: 34ch;
+    }
+  }
+}
+
+.teachers {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding-block: 6.25rem;
+
+  p {
+    max-width: 42ch;
+  }
+
+  .teachersSlider {
+    background-color: #f6eaea;
+  }
+}
+
+.resources {
+  padding-block: 6.25rem;
+
+  .resourcesImg {
+    max-width: 500px;
+    margin: 0 auto;
+    @media screen and (width > 800px) {
+      max-width: 400px;
+      margin-inline-end: auto;
+    }
+  }
+}
+
+.contact {
+  padding-block: 6.25rem;
+
+  .details {
+    /* display: grid;
+    grid-auto-flow: column; */
+
+    .description {
+      max-width: 60ch;
+    }
+
+    > div:nth-child(2) {
+      @media screen and (width > 800px) {
+        margin-inline-start: auto;
+      }
+    }
+  }
+}
+
+.cta {
+    padding-block: 6.25rem;
+}

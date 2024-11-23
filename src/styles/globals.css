@@ -39,7 +39,7 @@ h4,
 button,
 input,
 label {
-    line-height: 1.1;
+    line-height: 1;
 }
 
 /* Make input and text area more responsive */
@@ -93,4 +93,11 @@ textarea:not([rows]) {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-400);
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-neutral-900);
 }

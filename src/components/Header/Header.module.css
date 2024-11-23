@@ -1,0 +1,21 @@
+.primaryHeader {
+    padding-block: 1rem;
+
+    a {
+        color: var(--clr-neutral-900);
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: var(--clr-primary-400);
+        }
+
+        &.active {
+            color: var(--clr-primary-400);
+        }
+    }
+}
+
+div:has(> .primaryHeader) {
+    border-block-end: 1px solid var(--clr-neutral-300);
+}
