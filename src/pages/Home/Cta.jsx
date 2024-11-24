@@ -8,13 +8,15 @@ import energyAquamarineCircleScribble from '@images/energy-aquamarine-circle-scr
 
 const Cta = () => {
   return (
-    <section className={classNames("full-width", "grid", "justify-items-center", "gap-4", styles.cta)}>
+    <section className={classNames("full-width", "flex", "justify-center", styles.cta)}>
       <img src={giggleTextSheet} alt="" />
       <img src={journalSquareSticker} alt="" />
       <img src={doodleBlueScribble} alt="" />
       <img src={energyAquamarineCircleScribble} alt="" />
-      <h2 className="fs-800 ff-heading fw-semibold text-align-center">Join Star Classes today</h2>
-      <Button label="Sign up with us" type="primary" size="normal" />
+      <div className='grid gap-4 justify-items-center'>
+        <h2 className="fs-800 ff-heading fw-semibold text-align-center">Join Star Classes today</h2>
+        <Button label="Sign up with us" type="primary" size="normal" />
+      </div>
     </section>
   );
 }

@@ -53,8 +53,26 @@
       .swiperSlide {
         container-type: inline-size;
         padding: 1.5rem;
-        background-color: #f6eaea;
+
         border-radius: var(--br-1);
+
+        &:first-child {
+          background-color: #eaf6f6;
+
+        }
+        &:nth-child(2) {
+          background-color: #f6eaea;
+
+        }
+        &:nth-child(3) {
+          background-color: #f6f6ea;
+        }
+        &:nth-child(4) {
+          background-color: #f6eaf6;
+        }
+        &:nth-child(5) {
+          background-color: #eaf6ea;
+        }
 
         > div {
           display: grid;
@@ -85,6 +103,10 @@
   background: url(/src/assets/images/testimonial-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  
+  > * {
+    min-width: 0;
+  }
 
   .student {
     justify-self: flex-end;

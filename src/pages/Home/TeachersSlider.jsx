@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import classNames from "classnames";
 import styles from "./Home.module.css";
 import teachers from '@data/teachersData.json';
@@ -13,7 +13,12 @@ const TeachersSlider = () => {
         pagination={{
           dynamicBullets: true,
         }}
-        modules={[Pagination]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false
+        }}
+        loop={true}
+        modules={[Pagination, Autoplay]}
         className={styles.teachersSwiper}
       >
         {teachers.map((teacher, index) => (

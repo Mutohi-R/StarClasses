@@ -1,42 +1,42 @@
 [
-    {
-        "name": "Mrs Fatima Hassan",
-        "image": "/src/assets/images/fatima-hassan.png",
-        "subject": "Mathematics",
-        "qualification": "M.Sc. in Applied Mathematics, University of Cape Town",
-        "experience": "12 years of teaching mathematics for high and SAT/ACT prep",
-        "philosophy" : "“Breaking down complex problems into simple steps helps every student success.”"
-    },
-    {
-      "name": "Mr David Carter",
-      "image": "/src/assets/images/david-carter.png",
-      "subject": "English literature and language",
-      "qualification": "M.A. in English Literature, University of Cambridge",
-      "experience": "10 years of experience teaching English for competitive exams and advanced placement courses",
-      "philosophy": "“Words have the power to change the world; let’s start with yours.”"
-    },
-    {
-      "name": "Ms. Kavita Sharma",
-      "image": "/src/assets/images/kavita-sharma.png",
-      "subject": "Psychology",
-      "qualification": "M.A. in Psychology, Delhi University",
-      "experience": "5 years of experience teaching and conducting workshops on mental health awareness",
-      "philosophy": "“A healthy mind is the foundation for academic success.”"
-    },
-    {
-      "name": "Mrs. Aisha Ndlovu",
-      "image": "/src/assets/images/aisha-ndlovu.png",
-      "subject": "History",
-      "qualification": "M.A. in World History, University of Pretoria",
-      "experience": "10 years of teaching history at high school and college levels",
-      "philosophy": "“History is not just about the past; it’s a guide to the future.”"
-    },
-    {
-      "name": "Ms. Elena Garcia",
-      "image": "/src/assets/images/elena-garcia.png",
-      "subject": "Spanish Language",
-      "qualification": "M.A. in Spanish Linguistics, University of Madrid",
-      "experience": "6 years of experience teaching Spanish to beginners and advanced learners",
-      "philosophy": "“Learning a new language is opening the door to a new world.”"
-    }
+  {
+    "name": "Mr David Carter",
+    "image": "/src/assets/images/david-carter.png",
+    "subject": "English literature and language",
+    "qualification": "M.A. in English Literature, University of Cambridge",
+    "experience": "10 years of experience teaching English for competitive exams and advanced placement courses",
+    "philosophy": "“Words have the power to change the world; let’s start with yours.”"
+  },
+  {
+    "name": "Mrs Fatima Hassan",
+    "image": "/src/assets/images/fatima-hassan.png",
+    "subject": "Mathematics",
+    "qualification": "M.Sc. in Applied Mathematics, University of Cape Town",
+    "experience": "12 years of teaching mathematics for high and SAT/ACT prep",
+    "philosophy": "“Breaking down complex problems into simple steps helps every student success.”"
+  },
+  {
+    "name": "Ms. Kavita Sharma",
+    "image": "/src/assets/images/kavita-sharma.png",
+    "subject": "Psychology",
+    "qualification": "M.A. in Psychology, Delhi University",
+    "experience": "5 years of experience teaching and conducting workshops on mental health awareness",
+    "philosophy": "“A healthy mind is the foundation for academic success.”"
+  },
+  {
+    "name": "Mrs. Aisha Ndlovu",
+    "image": "/src/assets/images/aisha-ndlovu.png",
+    "subject": "History",
+    "qualification": "M.A. in World History, University of Pretoria",
+    "experience": "10 years of teaching history at high school and college levels",
+    "philosophy": "“History is not just about the past; it’s a guide to the future.”"
+  },
+  {
+    "name": "Ms. Elena Garcia",
+    "image": "/src/assets/images/elena-garcia.png",
+    "subject": "Spanish Language",
+    "qualification": "M.A. in Spanish Linguistics, University of Madrid",
+    "experience": "6 years of experience teaching Spanish to beginners and advanced learners",
+    "philosophy": "“Learning a new language is opening the door to a new world.”"
+  }
 ]
