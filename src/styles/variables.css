@@ -47,6 +47,7 @@
 
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-300: hsl(0, 2%, 82%); /* #d2d0d0 */
+  --clr-neutral-350: hsl(0, 2%, 75%); /* #c1bebe */
   --clr-neutral-400: hsl(208, 6%, 52%); /* #7d858c */
   --clr-neutral-500: hsl(208, 8%, 37%); /* #575f66 */
   --clr-neutral-900: hsl(0, 0%, 10%);

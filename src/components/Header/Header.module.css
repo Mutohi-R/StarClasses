@@ -1,7 +1,7 @@
 .primaryHeader {
     padding-block: 1rem;
 
-    a {
+    .navLink {
         color: var(--clr-neutral-900);
         text-decoration: none;
 
@@ -12,6 +12,23 @@
 
         &.active {
             color: var(--clr-primary-400);
+            font-weight: var(--fw-bold);
+        }
+    }
+
+    .primaryNavigation {
+        display: none;
+
+        @media screen and (width > 765px) {
+            display: flex;
+        }
+    }
+
+    .hamburger {
+        display: block;
+
+        @media screen and (width > 765px) {
+            display: none;
         }
     }
 }

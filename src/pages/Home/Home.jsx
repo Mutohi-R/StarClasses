@@ -6,6 +6,7 @@ import Resources from "./Resources"
 import Contact from "./Contact"
 import Cta from "./Cta"
 import Footer from "@components/Footer/Footer"
+import Testimonials from "./Testimonials"
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Hero />
         <About />
         <Teachers />
+        <Testimonials />
         <Resources />
         <Contact />
         <Cta />

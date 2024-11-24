@@ -1,0 +1,23 @@
+.inputGroup {
+
+    input {
+        border: 1px solid var(--clr-neutral-350);
+
+        &:focus,
+        &:hover {
+            border-color: var(--clr-neutral-500);
+            outline: none;
+        }
+    }
+}
+
+.checkbox {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    /* input[type="checkbox"] {
+        width: 1.125rem;
+        height: 1.125rem;
+    } */
+}
+

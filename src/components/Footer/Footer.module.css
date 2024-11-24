@@ -1,6 +1,7 @@
 .primaryFooter {
-  margin-block-start: 6.25rem;
-
+  /* margin-block-start: 6.25rem; */
+  position: relative;
+  
   .footerContainer {
     padding-block: 3.5rem;
     display: grid;

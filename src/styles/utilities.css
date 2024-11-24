@@ -37,6 +37,9 @@
 .fw-bold {
   font-weight: var(--fw-700);
 }
+.italic {
+  font-style: italic;
+}
 
 /* FONT FAMILIES */
 .ff-primary {
@@ -65,6 +68,9 @@
 .text-neutral-500 {
   color: var(--clr-neutral-500);
 }
+.text-neutral-900 {
+  color: var(--clr-neutral-900);
+}
 
 /* TEXT ALIGN */
 .text-align-left {
@@ -77,6 +83,10 @@
   text-align: end;
 }
 
+.text-underline {
+  text-decoration: underline;
+}
+
 .br-1 {
   border-radius: var(--br-1);
 }
@@ -86,6 +96,9 @@
 }
 .push-left {
   margin-right: auto;
+}
+.push-down {
+  margin-top: auto;
 }
 
 /* FLEXBOX */
@@ -128,6 +141,12 @@ justify-items-stretch {
 .align-items-end {
   align-items: flex-end;
 }
+.align-content-center {
+  align-content: center;
+}
+.place-content-center {
+  place-content: center;
+}
 
 /* GRID */
 .grid {
@@ -168,4 +187,21 @@ justify-items-stretch {
 
 .mx-auto {
   margin-inline: auto;
+}
+
+.pblock-12 {
+  padding-block: 0.75rem;
+}
+.pblock-16 {
+  padding-block: 1rem;
+}
+.pinline-12 {
+  padding-inline: 0.75rem;
+}
+.pinline-16 {
+  padding-inline: 1rem;
+}
+
+.h-full {
+  height: 100%;
 }

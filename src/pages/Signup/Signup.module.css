@@ -1,0 +1,67 @@
+.signupContainer {
+  display: grid;
+
+  /* gap: 6rem; */
+
+  @media screen and (width > 800px) {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .signupHeading {
+    display: grid;
+    /* height: 1000px; */
+
+    @media screen and (width > 800px) {
+      height: 1000px;
+      background: url("/src/assets/images/signup-img.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .tag {
+      margin-block-start: auto;
+      padding: 2rem;
+      background-color: hsl(27, 80%, 27%);
+
+      h1 {
+        max-width: 25ch;
+      }
+
+      p:first-of-type {
+        display: none;
+        @media screen and (width > 800px) {
+          display: block;
+        }
+      }
+      p:last-of-type {
+        max-width: 35ch;
+      }
+    }
+  }
+
+  .signupContent {
+    max-width: 680px;
+    padding-inline: 1rem;
+    padding-block: 2rem;
+
+    @media screen and (width > 800px) {
+      padding-inline-end: 1rem;
+    }
+  }
+}
+
+.informationGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-3);
+}
+
+.courseGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: var(--gap-4);
+  row-gap: var(--gap-2);
+}

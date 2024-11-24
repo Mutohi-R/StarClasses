@@ -4,6 +4,12 @@
     max-width: 58ch;
   }
 
+  .heroButtonContainer {
+    @media screen and (width < 464px) {
+      flex-direction: column;
+    }
+  }
+
   .heroImg {
     @media screen and (width > 800px) {
       max-width: 600px;
@@ -24,15 +30,68 @@
 
 .teachers {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  align-items: flex-start;
+  gap: 3rem;
   padding-block: 6.25rem;
+
+  @media screen and (width > 700px) {
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  > * {
+    min-width: 0;
+  }
 
   p {
     max-width: 42ch;
   }
 
   .teachersSlider {
-    background-color: #f6eaea;
+    .teachersSwiper {
+      height: 100%;
+
+      .swiperSlide {
+        container-type: inline-size;
+        padding: 1.5rem;
+        background-color: #f6eaea;
+        border-radius: var(--br-1);
+
+        > div {
+          display: grid;
+          gap: var(--gap-6);
+
+          @container (width > 400px) {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+
+        .teacherImg {
+          margin-block: auto;
+          @container (width < 601px) {
+            max-width: 300px;
+            margin-inline: auto;
+          }
+          img {
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+.testimonials {
+  padding-block: 9rem;
+  background: url(/src/assets/images/testimonial-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .student {
+    justify-self: flex-end;
+
+    .studentImg {
+      max-width: 150px;
+    }
   }
 }
 
@@ -69,5 +128,41 @@
 }
 
 .cta {
-    padding-block: 6.25rem;
+  position: relative;
+  z-index: 0;
+  padding-block: 6.25rem;
+  background: url(/src/assets/images/cta-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (width < 850px) {
+    img {
+      display: none;
+    }
+  }
+
+  img:first-child {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    z-index: -1;
+  }
+  img:nth-child(2) {
+    position: absolute;
+    bottom: 30px;
+    left: 300px;
+    z-index: -1;
+  }
+  img:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: -1;
+  }
+  img:nth-child(4) {
+    position: absolute;
+    bottom: -100px;
+    z-index: -1;
+    right: 150px;
+  }
 }
