@@ -167,12 +167,18 @@ const Courses = () => {
                 </a>
               </li>
               <li>
-                <a href={webDevelopmentBasics} download={"web development basics"}>
+                <a
+                  href={webDevelopmentBasics}
+                  download={"web development basics"}
+                >
                   Web development basics
                 </a>
               </li>
               <li>
-                <a href={dataScienceFundamentals} download={"data science fundamentals"}>
+                <a
+                  href={dataScienceFundamentals}
+                  download={"data science fundamentals"}
+                >
                   Data science fundamentals
                 </a>
               </li>
@@ -182,22 +188,34 @@ const Courses = () => {
                 </a>
               </li>
               <li>
-                <a href={computerApplicationsInBusiness} download={"computer applications in business"}>
+                <a
+                  href={computerApplicationsInBusiness}
+                  download={"computer applications in business"}
+                >
                   Computer applications in business
                 </a>
               </li>
               <li>
-                <a href={dataStructuresAndAlgorithms} download={"data structures and algorithms"}>
+                <a
+                  href={dataStructuresAndAlgorithms}
+                  download={"data structures and algorithms"}
+                >
                   Data structures and algorithms
                 </a>
               </li>
               <li>
-                <a href={digitalLiteracySkills} download={"digital literacy skills"}>
+                <a
+                  href={digitalLiteracySkills}
+                  download={"digital literacy skills"}
+                >
                   Digital literacy skills
                 </a>
               </li>
               <li>
-                <a href={programmingPracticesAndTechniques} download={"programming practices and techniques"}>
+                <a
+                  href={programmingPracticesAndTechniques}
+                  download={"programming practices and techniques"}
+                >
                   Programming practices and techniques
                 </a>
               </li>
@@ -208,6 +226,58 @@ const Courses = () => {
           </div>
         </div>
         <div className="grid gap-2">
+          <AccordionItem icon={technology} title="Technology">
+            <ul role="list">
+              <li>
+                <a
+                  href={introToCybersecurity}
+                  download={"intro to cybersecurity"}
+                >
+                  Introduction to cybersecurity
+                </a>
+              </li>
+              <li>
+                <a
+                  href={cloudComputingBasics}
+                  download={"cloud computing basics"}
+                >
+                  Cloud computing basics
+                </a>
+              </li>
+              <li>
+                <a
+                  href={networkingFundamentals}
+                  download={"networking fundamentals"}
+                >
+                  Networking fundamentals
+                </a>
+              </li>
+              <li>
+                <a href={internetOfThings} download={"internet of things"}>
+                  Internet of things (IoT)
+                </a>
+              </li>
+              <li>
+                <a
+                  href={blockchainTechnology}
+                  download={"blockchain technology"}
+                >
+                  Blockchain technology
+                </a>
+              </li>
+              <li>
+                <a href={quantumComputing} download={"quantum computing"}>
+                  Quantum computing
+                </a>
+              </li>
+              <li>
+                <a href={augmentedReality} download={"augmented reality"}>
+                  Augmented reality (AR) & virtual reality (VR)
+                </a>
+              </li>
+            </ul>
+          </AccordionItem>
+          <Line />
           <AccordionItem icon={testPrep} title="Test Prep">
             <ul role="list">
               <li>SAT preparation</li>
@@ -241,46 +311,6 @@ const Courses = () => {
               <li>Emotional intelligence</li>
               <li>Career counselling & resume building</li>
               <li>Stress management for students</li>
-            </ul>
-          </AccordionItem>
-          <Line />
-          <AccordionItem icon={technology} title="Technology">
-            <ul role="list">
-              <li>
-                <a href={introToCybersecurity} download={"intro to cybersecurity"}>
-                  Introduction to cybersecurity
-                </a>
-              </li>
-              <li>
-                <a href={cloudComputingBasics} download={"cloud computing basics"}>
-                  Cloud computing basics
-                </a>
-              </li>
-              <li>
-                <a href={networkingFundamentals} download={"networking fundamentals"}>
-                  Networking fundamentals
-                </a>
-              </li>
-              <li>
-                <a href={internetOfThings} download={"internet of things"}>
-                  Internet of things (IoT)
-                </a>
-              </li>
-              <li>
-                <a href={blockchainTechnology} download={"blockchain technology"}>
-                  Blockchain technology
-                </a>
-              </li>
-              <li>
-                <a href={quantumComputing} download={"quantum computing"}>
-                  Quantum computing
-                </a>
-              </li>
-              <li>
-                <a href={augmentedReality} download={"augmented reality"}>
-                  Augmented reality (AR) & virtual reality (VR)
-                </a>
-              </li>
             </ul>
           </AccordionItem>
         </div>
