@@ -1,16 +1,16 @@
 [
     {
-        "imgSrc": "src/assets/images/personalised-learning.svg",
+        "imgSrc": "/images/personalised-learning.svg",
         "feature": "Personalised learing",
         "description": "We understand that each student learns differently. Our tailored approach includes customized learning plans that adapt to each student’s pace, strengths, and areas for growth."
     },
     {
-        "imgSrc": "src/assets/images/proven-success-records.svg",
+        "imgSrc": "/images/proven-success-records.svg",
         "feature": "Proven success records",
         "description": "With over a decade of experience, we have consistently helped students achieve top scores and reach their academic goals. Our track record speaks to our dedication and results-driven approach."
     },
     {
-        "imgSrc": "src/assets/images/supportive-environment.svg",
+        "imgSrc": "/images/supportive-environment.svg",
         "feature": "Supportive environment",
         "description": "Our classrooms foster a supportive and encouraging atmosphere, where students feel comfortable asking questions and engaging with their peers and instructors. Learning should be as enjoyable as it is impactful."
     }

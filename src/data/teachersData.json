@@ -1,7 +1,7 @@
 [
   {
     "name": "Mr David Carter",
-    "image": "/src/assets/images/david-carter.png",
+    "image": "/images/david-carter.png",
     "subject": "English literature and language",
     "qualification": "M.A. in English Literature, University of Cambridge",
     "experience": "10 years of experience teaching English for competitive exams and advanced placement courses",
@@ -9,7 +9,7 @@
   },
   {
     "name": "Mrs Fatima Hassan",
-    "image": "/src/assets/images/fatima-hassan.png",
+    "image": "/images/fatima-hassan.png",
     "subject": "Mathematics",
     "qualification": "M.Sc. in Applied Mathematics, University of Cape Town",
     "experience": "12 years of teaching mathematics for high and SAT/ACT prep",
@@ -17,7 +17,7 @@
   },
   {
     "name": "Ms. Kavita Sharma",
-    "image": "/src/assets/images/kavita-sharma.png",
+    "image": "/images/kavita-sharma.png",
     "subject": "Psychology",
     "qualification": "M.A. in Psychology, Delhi University",
     "experience": "5 years of experience teaching and conducting workshops on mental health awareness",
@@ -25,7 +25,7 @@
   },
   {
     "name": "Mrs. Aisha Ndlovu",
-    "image": "/src/assets/images/aisha-ndlovu.png",
+    "image": "/images/aisha-ndlovu.png",
     "subject": "History",
     "qualification": "M.A. in World History, University of Pretoria",
     "experience": "10 years of teaching history at high school and college levels",
@@ -33,7 +33,7 @@
   },
   {
     "name": "Ms. Elena Garcia",
-    "image": "/src/assets/images/elena-garcia.png",
+    "image": "/images/elena-garcia.png",
     "subject": "Spanish Language",
     "qualification": "M.A. in Spanish Linguistics, University of Madrid",
     "experience": "6 years of experience teaching Spanish to beginners and advanced learners",
