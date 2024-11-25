@@ -17,7 +17,6 @@ const TeachersSlider = () => {
           delay: 2500,
           disableOnInteraction: false
         }}
-        loop={true}
         modules={[Pagination, Autoplay]}
         className={styles.teachersSwiper}
       >
@@ -33,7 +32,7 @@ const TeachersSlider = () => {
                     {teacher.name}
                   </p>
                   <p>{teacher.subject}</p>
-                  <p>{teacher.qualificationn}</p>
+                  <p>{teacher.qualification}</p>
                   <p>{teacher.experience}</p>
                 </div>
                 <p className="italic">
