@@ -37,7 +37,7 @@ const AccordionItem = ({ icon, title, children }) => {
           <div>
             <img src={icon} alt="" />
           </div>
-          <p>{title}</p>
+          <p className='fs-500 fw-semibold'>{title}</p>
         </div>
         <button data-open={isAccordionOpen} className={styles.caret}>
           <img src={caret} alt="" />

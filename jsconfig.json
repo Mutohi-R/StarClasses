@@ -10,6 +10,7 @@
             "@styles/*": ["styles/*"],
             "@images/*": ["assets/images/*"],
             "@icons/*": ["assets/icons/*"],
+            "@syllabus/*": ["assets/syllabus/*"],
         }
     }
 }
