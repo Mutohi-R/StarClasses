@@ -2,6 +2,7 @@ import classNames from "classnames";
 import styles from "./Home.module.css";
 import TeachersSlider from "./TeachersSlider";
 import Button from "@ui/Button/Button";
+import { Link } from "react-router-dom";
 
 const Teachers = () => {
   return (
@@ -17,9 +18,9 @@ const Teachers = () => {
           to excellence, they guide students toward success every step of the
           way.
         </p>
-        <div>
+        <Link to={'/signup'}>
           <Button label="Register now" type="primary" size="large" />
-        </div>
+        </Link>
       </div>
       <TeachersSlider />
     </section>

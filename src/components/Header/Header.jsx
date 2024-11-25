@@ -4,8 +4,16 @@ import { NavLink } from "react-router-dom";
 import Button from "@ui/Button/Button";
 import Logo from "@icons/logo.svg";
 import Hamburger from "@icons/hamburger.svg";
+import Close from "@icons/close.svg";
+import { useState } from "react";
 
 const Header = () => {
+
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const handleNavToggle = () => {
+    setIsNavOpen(!isNavOpen);
+  }
+
   return (
     <div className="content-grid">
       <header
@@ -27,6 +35,7 @@ const Header = () => {
             "gap-9",
             styles.primaryNavigation
           )}
+          data-open={isNavOpen}
         >
           <ul role="list" className="flex gap-6">
             <li>
@@ -56,9 +65,11 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className={styles.hamburger}>
-          <img src={Hamburger} alt="" />
-        </div>
+        <button onClick={handleNavToggle} data-sticky={isNavOpen} className={styles.menuToggle}>
+          {
+            isNavOpen ? <img src={Close} alt="" /> : <img src={Hamburger} alt="" />
+          }       
+        </button>
       </header>
     </div>
   );

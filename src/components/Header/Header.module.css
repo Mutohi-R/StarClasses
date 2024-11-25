@@ -1,38 +1,69 @@
 .primaryHeader {
-    padding-block: 1rem;
+  padding-block: 1rem;
 
-    .navLink {
-        color: var(--clr-neutral-900);
-        text-decoration: none;
+  .navLink {
+    color: var(--clr-neutral-900);
+    text-decoration: none;
 
-        &:hover,
-        &:focus {
-            color: var(--clr-primary-400);
-        }
-
-        &.active {
-            color: var(--clr-primary-400);
-            font-weight: var(--fw-bold);
-        }
+    &:hover,
+    &:focus {
+      color: var(--clr-primary-400);
     }
 
-    .primaryNavigation {
-        display: none;
+    &.active {
+      color: var(--clr-primary-400);
+      font-weight: var(--fw-bold);
+    }
+  }
 
-        @media screen and (width > 765px) {
-            display: flex;
+  .primaryNavigation {
+    display: flex;
+
+    @media screen and (width < 765px) {
+      display: none;
+      transform: scale(0);
+
+      &[data-open="true"] {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 70%;
+        display: grid;
+        align-content: flex-start;
+        padding-block: 5rem;
+        background: var(--clr-neutral-100);
+        border: 1px solid var(--clr-neutral-300);
+        transform: scale(1);
+        transition: transform 1s ease-in-out;
+
+        ul {
+          display: grid;
+          justify-items: center;
         }
+      }
+    }
+  }
+
+  .menuToggle {
+    z-index: 2;
+
+    display: block;
+    background: none;
+    border: none;
+
+    &[data-sticky="true"] {
+      position: fixed;
+      right: 1rem;
     }
 
-    .hamburger {
-        display: block;
-
-        @media screen and (width > 765px) {
-            display: none;
-        }
+    @media screen and (width > 765px) {
+      display: none;
     }
+  }
 }
 
 div:has(> .primaryHeader) {
-    border-block-end: 1px solid var(--clr-neutral-300);
+  border-block-end: 1px solid var(--clr-neutral-300);
 }

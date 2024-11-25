@@ -132,7 +132,7 @@
 
 .contact {
   display: grid;
-  gap: 5rem;
+  gap: 3rem;
   padding-block: 6.25rem;
 
   .details {
