@@ -1,6 +1,7 @@
 .accordion {
   display: grid;
   grid-template-columns: 1fr;
+  align-items: flex-start;
   gap: var(--gap-2);
   padding: 1rem;
   background-color: #f5f5f5;
@@ -20,12 +21,31 @@
 
 .accordionItem {
   .accordionHeader {
+    cursor: pointer;
     .caret {
       background: transparent;
       border: none;
+      transition: all 0.3s ease-in-out;
+
+      &[data-open="true"] {
+        transform: rotate(180deg);
+        transition: all 0.3s ease-in-out;
+      }
     }
   }
 
   .accordionContent {
+    display: none;
+    padding-inline-start: 4.4rem;
+
+    &[data-open="true"] {
+      display: block;
+    }
+
+    ul {
+      display: grid;
+      gap: var(--gap-3);
+      color: var(--clr-neutral-500);
+    }
   }
 }

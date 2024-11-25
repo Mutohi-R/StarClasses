@@ -18,10 +18,9 @@
 
   .primaryNavigation {
     display: flex;
-
+    
     @media screen and (width < 765px) {
       display: none;
-      transform: scale(0);
 
       &[data-open="true"] {
         z-index: 4;
@@ -34,9 +33,6 @@
         align-content: flex-start;
         padding-block: 5rem;
         background: var(--clr-neutral-100);
-        border: 1px solid var(--clr-neutral-300);
-        transform: scale(1);
-        transition: transform 1s ease-in-out;
 
         ul {
           display: grid;
