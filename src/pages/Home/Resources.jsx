@@ -5,11 +5,19 @@ import resourcesImage from '@images/resources-img.png'
 
 const Resources = () => {
   return (
-    <section className={classNames("partia", "even-columns", "align-items-center", "gap-9", styles.resources)}>
+    <section
+      className={classNames(
+        "partia",
+        "even-columns",
+        "align-items-center",
+        "gap-9",
+        styles.resources
+      )}
+    >
       <div className={classNames(styles.resourcesImg)}>
         <img src={resourcesImage} alt="" />
       </div>
-      <div className='grid gap-4'>
+      <div className="grid gap-4">
         <p className="fs-300 text-neutral-400">
           OUR RESOURCES AT YOUR FINGERTIPS
         </p>
@@ -21,7 +29,7 @@ const Resources = () => {
           your fingertips. Download course materials, explore study guides, and
           access tools designed to enhance your academic journey.
         </p>
-        <div className="flex gap-3">
+        <div className={classNames(styles.resourcesButtonContainer, "flex gap-3")}>
           <Button label="Course syllabus" type="primary" size="large" />
           <Button label="Price list" type="primary" size="large" />
         </div>
