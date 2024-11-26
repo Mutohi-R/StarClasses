@@ -1,0 +1,5 @@
+.tickerContainer {
+    .tickerContent p {
+        margin: 0;
+    }
+}

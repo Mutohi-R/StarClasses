@@ -1,5 +1,6 @@
 import styles from "./Footer.module.css";
 import classNames from "classnames";
+import Location from "@components/Location/Location";
 import Button from "@ui/Button/Button";
 import facebook from "@icons/facebook.svg";
 import x from "@icons/x.svg";
@@ -14,12 +15,7 @@ const Footer = () => {
         styles.primaryFooter
       )}
     >
-      <div
-        className={classNames(
-          "breakout",
-          styles.footerContainer
-        )}
-      >
+      <div className={classNames("breakout", styles.footerContainer)}>
         <div className={classNames("grid gap-6", styles.footerSectionOne)}>
           <p className="fs-500 text-primary-300">
             To provide <span className="text-neutral-100">quality</span>{" "}
@@ -35,7 +31,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className={classNames("flex gap-10 fs-300", styles.footerSectionTwo)}>
+        <div
+          className={classNames("flex gap-10 fs-300", styles.footerSectionTwo)}
+        >
           <div className="grid gap-2">
             <p className="text-primary-300">Quick links</p>
             <p>Home</p>
@@ -57,17 +55,33 @@ const Footer = () => {
             <p>Technology</p>
           </div>
         </div>
-        <div className={classNames("flex gap-4 flex-wrap fs-300", styles.footerSectionThree)}>
-          <p className="text-primary-300">&copy; Star Classes. All rights reserved.</p>
+        <div
+          className={classNames(
+            "flex gap-4 flex-wrap fs-300",
+            styles.footerSectionThree
+          )}
+        >
+          <p className="text-primary-300">
+            &copy; Star Classes. All rights reserved.
+          </p>
           <p>Terms of service</p>
           <p>Privacy policy</p>
           <p>Cookies settings</p>
         </div>
-        <div className={classNames("flex gap-1 flex-wrap", styles.footerSectionFour)}>
+        <div
+          className={classNames(
+            "flex gap-1 flex-wrap",
+            styles.footerSectionFour
+          )}
+        >
           <img src={facebook} alt="" />
           <img src={linkedin} alt="" />
           <img src={x} alt="" />
           <img src={instagram} alt="" />
+        </div>
+
+        <div className={styles.locationContainer}>
+          <Location />
         </div>
       </div>
     </footer>

@@ -1,6 +1,7 @@
 import styles from "./Header.module.css";
 import classNames from "classnames";
 import { NavLink } from "react-router-dom";
+import VisitorCount from "@components/VisitorCount/VisitorCount";
 import Button from "@ui/Button/Button";
 import Logo from "@icons/logo.svg";
 import Hamburger from "@icons/hamburger.svg";
@@ -27,6 +28,7 @@ const Header = () => {
       >
         <div className={styles.logo}>
           <img src={Logo} alt="Star Classes logo" />
+          <VisitorCount />
         </div>
         <nav
           className={classNames(
