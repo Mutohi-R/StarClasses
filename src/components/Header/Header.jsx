@@ -41,22 +41,33 @@ const Header = () => {
         >
           <ul role="list" className="flex gap-6">
             <li>
-              <NavLink className={classNames(styles.navLink, "active")} to={"/"}>Home</NavLink>
+              <NavLink
+                className={classNames(styles.navLink, "active")}
+                to={"/"}
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink className={styles.navLink}>Courses</NavLink>
+              <a className={styles.navLink} href="#courses">
+                Courses
+              </a>
             </li>
             <li>
-              <NavLink className={styles.navLink}>Pricing</NavLink>
+              <a className={styles.navLink} href="#resources">
+                Pricing
+              </a>
             </li>
             <li>
-              <NavLink className={styles.navLink}>Resources</NavLink>
+              <a className={styles.navLink} href="#resources">
+                Resources
+              </a>
             </li>
           </ul>
 
           <ul role="list" className="flex align-items-center gap-6">
             <li>
-              <NavLink to={"/login"}>
+              <NavLink to={"/signup"}>
                 <Button label="Log in" type="link" />
               </NavLink>
             </li>
@@ -67,10 +78,16 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <button onClick={handleNavToggle} data-sticky={isNavOpen} className={styles.menuToggle}>
-          {
-            isNavOpen ? <img src={Close} alt="" /> : <img src={Hamburger} alt="" />
-          }       
+        <button
+          onClick={handleNavToggle}
+          data-sticky={isNavOpen}
+          className={styles.menuToggle}
+        >
+          {isNavOpen ? (
+            <img src={Close} alt="" />
+          ) : (
+            <img src={Hamburger} alt="" />
+          )}
         </button>
       </header>
     </div>

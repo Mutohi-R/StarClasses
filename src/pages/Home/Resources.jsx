@@ -1,11 +1,14 @@
-import styles from './Home.module.css'
-import classNames from 'classnames'
-import Button from '@ui/Button/Button'
-import resourcesImage from '@images/resources-img.png'
+import styles from "./Home.module.css";
+import classNames from "classnames";
+import Button from "@ui/Button/Button";
+import resourcesImage from "@images/resources-img.png";
+import introToCybersecurity from "@syllabus/Introduction_to_Cybersecurity_Syllabus.pdf";
+import priceList from "@syllabus/Star_Classes_Price_Listing.pdf";
 
 const Resources = () => {
   return (
     <section
+      id="resources"
       className={classNames(
         "partia",
         "even-columns",
@@ -29,13 +32,19 @@ const Resources = () => {
           your fingertips. Download course materials, explore study guides, and
           access tools designed to enhance your academic journey.
         </p>
-        <div className={classNames(styles.resourcesButtonContainer, "flex gap-3")}>
-          <Button label="Course syllabus" type="primary" size="large" />
-          <Button label="Price list" type="primary" size="large" />
+        <div
+          className={classNames(styles.resourcesButtonContainer, "flex gap-3")}
+        >
+          <a href={introToCybersecurity} download={"course syllabus"}>
+            <Button label="Course syllabus" type="primary" size="large" />
+          </a>
+          <a href={priceList} download={"price list"}>
+            <Button label="Price list" type="primary" size="large" />
+          </a>
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Resources
+export default Resources;

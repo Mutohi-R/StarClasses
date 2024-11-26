@@ -55,8 +55,11 @@
 
 .informationGroup {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: var(--gap-3);
+
+  @media screen and (width > 500px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .courseGroup {

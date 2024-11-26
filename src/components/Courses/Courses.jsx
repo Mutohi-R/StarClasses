@@ -51,7 +51,7 @@ import augmentedReality from "@syllabus/Augmented_Reality_(AR)_&_Virtual_Reality
 
 const Courses = () => {
   return (
-    <section className="breakout">
+    <section id="courses" className="breakout">
       <article className={classNames(styles.accordion, "br-1")}>
         <div className="grid gap-2">
           <AccordionItem icon={mathematics} title="Mathematics">
@@ -280,23 +280,47 @@ const Courses = () => {
           <Line />
           <AccordionItem icon={testPrep} title="Test Prep">
             <ul role="list">
-              <li>SAT preparation</li>
-              <li>ACT preparation</li>
-              <li>GRE quantitative</li>
-              <li>GMAT verbal and quantitative</li>
-              <li>AP exam prep</li>
-              <li>IELTS/TOEFL english prep</li>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>SAT preparation</li>
+              </a>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>ACT preparation</li>
+              </a>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>GRE quantitative</li>
+              </a>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>GMAT verbal and quantitative</li>
+              </a>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>AP exam prep</li>
+              </a>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>IELTS/TOEFL english prep</li>
+              </a>
             </ul>
           </AccordionItem>
           <Line />
           <AccordionItem icon={fineArts} title="Fine Arts">
             <ul role="list">
-              <li>Visual arts</li>
-              <li>Music theory</li>
-              <li>Photography basics</li>
-              <li>Dance and movement</li>
-              <li>Graphic design fundamentals</li>
-              <li>Theatre & performance arts</li>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>Visual arts</li>
+              </a>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>Music theory</li>
+              </a>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>Photography basics</li>
+              </a>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>Dance and movement</li>
+              </a>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>Graphic design fundamentals</li>
+              </a>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>Theatre & performance arts</li>
+              </a>
             </ul>
           </AccordionItem>
           <Line />
@@ -305,12 +329,24 @@ const Courses = () => {
             title="Personal Development"
           >
             <ul role="list">
-              <li>Time management</li>
-              <li>Leadership skills</li>
-              <li>Critical thinking and problem solving</li>
-              <li>Emotional intelligence</li>
-              <li>Career counselling & resume building</li>
-              <li>Stress management for students</li>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>Time management</li>
+              </a>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>Leadership skills</li>
+              </a>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>Critical thinking and problem solving</li>
+              </a>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>Emotional intelligence</li>
+              </a>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>Career counselling & resume building</li>
+              </a>
+              <a href={augmentedReality} download={"augmented reality"}>
+                <li>Stress management for students</li>
+              </a>
             </ul>
           </AccordionItem>
         </div>

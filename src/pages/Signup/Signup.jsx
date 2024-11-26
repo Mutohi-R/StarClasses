@@ -1,5 +1,4 @@
 import styles from "./Signup.module.css";
-import Swiper from "swiper";
 import 'swiper/css';
 import Header from "@components/Header/Header";
 import Footer from "@components/Footer/Footer";
